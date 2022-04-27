@@ -18,7 +18,7 @@
             color: #22905B;
         }
         
-        .container {
+        .cont {
             /* Used to position the diagonal area */
             position: relative;
         }
@@ -45,12 +45,53 @@
             color: #D1E1D9;
             text-align: center;
         }
+        
+        @media screen and (min-width: 768px) {
+            .img-fluid {
+                max-width: 80%;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 40%;
+            }
+            .text {
+                font-size: medium;
+                padding-top: 15%;
+                padding-bottom: 0%;
+            }
+            .container__diagonal {
+                transform: skewY(3deg);
+            }
+        }
+        
+        @media screen and (min-width: 1000px) {
+            .img-fluid {
+                max-width: 80%;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 30%;
+            }
+            .text {
+                font-size: medium;
+                padding-top: 5%;
+                padding-bottom: 0%;
+            }
+            .container__diagonal {
+                transform: skewY(3deg);
+            }
+        }
     </style>
 </head>
 
 <body class="bg">
-    <img class="img-fluid" src="./final mockup.png" width="100%" />
-    <div class="container">
+
+    <img class="img-fluid center" src="./final mockup.png" width="100%" />
+    <div class="cont">
         <!-- The diagonal area -->
         <div class="container__diagonal"></div>
 
